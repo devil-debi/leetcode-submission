@@ -14,15 +14,13 @@ class Solution {
             set2.add(i);
         }
 
-        for (int i : nums1){
+        for (int i : set1){
             if (!set2.contains(i)){
-                set2.add(i);
                 list1.add(i);
             }
         }
-        for (int i : nums2){
+        for (int i : set2){
             if (!set1.contains(i)){
-                set1.add(i);
                 list2.add(i);
             }
         }
