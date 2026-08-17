@@ -5,8 +5,10 @@ func increasingTriplet(nums []int) bool {
 	for _, num := range nums {
 		if num <= i {
 			i = num
+            continue
 		} else if num <= j {
 			j = num
+            continue
 		} else {
 			return true
 		}
